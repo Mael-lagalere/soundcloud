@@ -1,0 +1,107 @@
+@font-normal     : 14px;
+@font-titre      : 19px;
+@font-sous       : 16px;
+@font-petit      : 12px;
+
+@color-text      : #1D1F20;
+@color1          : #CE0357;
+@color2          : #502822;
+@color3          : #E13DE5;
+
+
+@font-root       : 12px;
+@column-width    : unit((96px / @font-root), %);
+@gutter-width    : unit((36px / @font-root), %); 
+
+// wrapper
+.wrapper(@cols)
+{
+	width: @column-width * @cols;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/** Texte **/
+body
+{
+	font: unit((@font-normal / @font-root), em) /1.5em Georgia, Serif;
+	color: @color-text;
+}
+
+main{
+	background-color: @color1;
+}
+h1
+{
+	font-size: @font-titre;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+}
+h2
+{
+	&:extend(h1);
+	font-size: @font-sous;
+}
+p
+{
+	margin-bottom: 1.5em;
+	font-size: @font-normal; 
+}
+
+footer
+{
+	font-size: @font-petit; 
+	background-color: @color2;
+}
+
+
+/** menu **/
+.btn()
+{
+	.btn
+}
+
+.btn{
+	background-color:@color3;
+	text-decoration:none;
+	color: white;
+	padding:10px;
+
+
+}
+
+.banner{
+	padding:3%;
+}
+
+header{
+	float:left;
+	width:50%;
+}
+
+.main-nav{
+	float:right;
+
+}
+
+main{
+	padding:3%;
+}
+
+/** Logo **/
+header img {
+	width:150px;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clearfix {display: block;}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}
