@@ -1,7 +1,68 @@
-img {
-	width: 300px;
+/** Texte **/
+body {
+  font: 1.16666667em / 1.5em Georgia, Serif;
+  color: #1d1f20;
 }
-
-h1 {
-	color: red;
+main {
+  background-color: #ce0357;
 }
+h1,
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+h2 {
+  font-size: 16px;
+}
+p {
+  margin-bottom: 1.5em;
+  font-size: 14px;
+}
+footer {
+  font-size: 12px;
+  background-color: #502822;
+}
+/** menu **/
+.btn {
+  background-color: #e13de5;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.banner {
+  padding: 3%;
+}
+header {
+  float: left;
+  width: 50%;
+}
+.main-nav {
+  float: right;
+}
+main {
+  padding: 3%;
+}
+/** Logo **/
+header img {
+  width: 150px;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+/*# sourceMappingURL=style.css.map */
