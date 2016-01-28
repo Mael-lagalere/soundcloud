@@ -1,7 +1,9 @@
+/** wrapper **/
 /** Texte **/
 body {
   font: 1.16666667em / 1.5em Georgia, Serif;
   color: #1d1f20;
+  padding: 3%;
 }
 main {
   background-color: #ce0357;
@@ -19,10 +21,16 @@ h2 {
 p {
   margin-bottom: 1.5em;
   font-size: 14px;
+  text-align: justify;
 }
 footer {
   font-size: 12px;
   background-color: #502822;
+  padding: 3%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 /** menu **/
 .btn {
@@ -64,5 +72,21 @@ html[xmlns] .clearfix {
 }
 * html .clearfix {
   height: 1%;
+}
+/** Responsive **/
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0%;
+  }
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -13,7 +13,7 @@
 @column-width    : unit((96px / @font-root), %);
 @gutter-width    : unit((36px / @font-root), %); 
 
-// wrapper
+/** wrapper **/
 .wrapper(@cols)
 {
 	width: @column-width * @cols;
@@ -26,6 +26,7 @@ body
 {
 	font: unit((@font-normal / @font-root), em) /1.5em Georgia, Serif;
 	color: @color-text;
+	padding:3%;
 }
 
 main{
@@ -47,14 +48,21 @@ p
 {
 	margin-bottom: 1.5em;
 	font-size: @font-normal; 
+	text-align:justify;
 }
 
 footer
 {
 	font-size: @font-petit; 
 	background-color: @color2;
+	padding:3%;
+	
 }
 
+footer a{
+	text-decoration:none;
+	color:white;
+}
 
 /** menu **/
 .btn()
@@ -105,3 +113,22 @@ header img {
 .clearfix {display: block;}
 html[xmlns] .clearfix {display: block;}
 * html .clearfix {height: 1%;}
+
+/** Responsive **/
+@media screen and (min-width:1000px) {
+    .wrapper {
+        width:75%;
+        margin:0 auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body{
+    padding:0%;
+    }
+
+    .wrapper {
+        width:100%;
+        margin:0 auto;
+    }
+}
