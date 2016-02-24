@@ -2,11 +2,15 @@
 /** Texte **/
 body {
   font: 1.16666667em / 1.5em Georgia, Serif;
-  color: #1d1f20;
+  color: #ffffff;
   padding: 3%;
 }
 main {
   background-color: #ce0357;
+}
+article img {
+  width: 100%;
+  border: 5px #fff solid;
 }
 h1,
 h2 {
@@ -53,8 +57,11 @@ main {
   padding: 3%;
 }
 /** Logo **/
-header img {
+.logo {
   width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .clearfix:after {
   content: ".";
@@ -88,4 +95,25 @@ html[xmlns] .clearfix {
     width: 100%;
     margin: 0 auto;
   }
+  .banner {
+    padding: 0 0 5px 0;
+  }
+  header {
+    float: none;
+    width: inherit;
+  }
+  nav {
+    width: 100%;
+  }
+  .main-nav {
+    float: none;
+  }
+  .btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1px;
+    padding: 0;
+  }
 }
+/*# sourceMappingURL=style.css.map */

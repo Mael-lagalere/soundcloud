@@ -3,7 +3,7 @@
 @font-sous       : 16px;
 @font-petit      : 12px;
 
-@color-text      : #1D1F20;
+@color-text      : #fff;
 @color1          : #CE0357;
 @color2          : #502822;
 @color3          : #E13DE5;
@@ -31,6 +31,10 @@ body
 
 main{
 	background-color: @color1;
+}
+article img{
+	width: 100%;
+	border: 5px #fff solid;
 }
 h1
 {
@@ -98,8 +102,12 @@ main{
 }
 
 /** Logo **/
-header img {
+.logo {
 	width:150px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto; 
+
 }
 
 .clearfix:after {
@@ -130,5 +138,28 @@ html[xmlns] .clearfix {display: block;}
     .wrapper {
         width:100%;
         margin:0 auto;
+    }
+    .banner{
+    padding: 0 0 5px 0;
+    }
+    header{
+	float:none;
+	width:inherit;
+}
+    nav{
+    width:100%;
+
+    }
+    .main-nav{
+	float:none;
+
+}
+    .btn{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    margin-bottom:1px;
+    padding:0;
+
     }
 }
