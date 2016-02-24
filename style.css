@@ -115,5 +115,8 @@ html[xmlns] .clearfix {
     margin-bottom: 1px;
     padding: 0;
   }
+  .main-footer {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
